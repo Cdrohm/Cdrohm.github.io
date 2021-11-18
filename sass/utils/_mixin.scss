@@ -1,0 +1,4 @@
+/*dégradé bouton*/
+@mixin gradient-color {
+    background-image: linear-gradient($color-secondary, $color-primary);
+}

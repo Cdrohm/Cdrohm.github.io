@@ -1,0 +1,13 @@
+.heart{
+    font-size: 30px;
+    color: $color-icon;
+    &:hover{
+        animation: fill 4s ease-out;
+        background: linear-gradient($color-secondary, $color-primary);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: bold;
+        transition-duration: .25s;
+    }
+
+}
