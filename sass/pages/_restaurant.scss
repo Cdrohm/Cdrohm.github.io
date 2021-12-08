@@ -69,6 +69,8 @@
             /*ANIMATION*/
             animation: progress 2s;
             animation-fill-mode: both;
+            transform: scale(0);
+            -webkit-animation: progress 2s both;
             
         }
     }
@@ -92,9 +94,12 @@
         @include shadowbox;
         cursor: pointer;
         /*ANIMATION*/
-        animation: appear 1s;
-        animation-timing-function: cubic-bezier(.8,-0.6,.36,1.2) all ease-in;
-        animation-fill-mode: both;
+        animation: appear 1s cubic-bezier(.47,0,.36,.38) forwards;
+        -webkit-animation: appear 1s cubic-bezier(.47,0,.36,.38) forwards;
+        transform: scale(0);
+       /* animation-timing-function: cubic-bezier(.47,0,.36,.38) all ease-in;
+        animation-fill-mode: forwards;*/
+        
 
         &_txt{
             width: 90%;
@@ -126,7 +131,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            
+            /*ANIMATION*/
             transition: all 0.8s ease-in-out;
         }
 
@@ -147,6 +152,7 @@
 .check_icons{
     color: white;
     font-size: 20px;
+    /*ANIMATION*/
     opacity: 0;
     transform: rotate(0deg);
     transition: all 0.7s ease-in-out;
