@@ -21,12 +21,13 @@
 
 /*RESERVEZ*/
 .explore {
-    padding: 30px;
+    padding: 30px 30px 60px 30px;
     text-align: center;
     background-color: $color-backgrey;
 
         &_txt {
             color: $color-txt;
+            margin-bottom: 40px;
         }
 }
 
@@ -48,7 +49,7 @@
             list-style: none;
             counter-reset: numberList;
 
-                @media (min-width:1224px) {
+                @media (min-width:1024px) {
                     display: flex;
                     justify-content: space-around;
             }
@@ -68,7 +69,10 @@
                     .function_list_icon {
                         color: $color-primary;
                     }
-                }              
+                }
+                    @media (min-width:1024px) {
+                        width: 25%;
+                    }             
         }
 
         &_step:before {
@@ -112,7 +116,7 @@
     border-radius: 20px;
     margin-bottom: 30px;
      /*media*/
-        @media (min-width:768px) {
+        @media (min-width:1024px) {
             grid-template-columns: repeat(2, 1fr);
             
         } 
